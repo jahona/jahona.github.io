@@ -3,9 +3,6 @@ layout: default
 author: jill
 ---
 
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-
 # Jekyll Install 시 Error 시 해결방법
 
 ```
