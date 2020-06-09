@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "해쉬의 기본적인 기법 정리"
+title:  "해쉬 알고리즘 요약"
 date:   2020-06-07 20:04:20 +0900
 categories: Hash
 ---
