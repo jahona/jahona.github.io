@@ -5,6 +5,12 @@
     "engines": {
         "ghost": ">=1.2.0"
     },
+    "scripts": {
+      "gulp-css": "./node_modules/gulp/bin/gulp.js css",
+      "serve": "bundle exec jekyll serve",
+      "build": "bundle exec jekyll build",
+      "prod": "JEKYLL_ENV=production bundle exec jekyll build"
+    },
     "license": "MIT",
     "devDependencies": {
         "autoprefixer": "^7.2.6",
