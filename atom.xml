@@ -4,7 +4,22 @@
     <title> - Articles</title>
     <description>기술블로그입니다</description>
     <link>
-    https://jahona.github.io</link>
+    http://localhost:4000</link>
+    
+      
+      <item>
+        <title>Tensorflow Install</title>
+        
+          <description>&lt;p&gt;M1 맥북을 사용하고 있어서 M1에 맞게 tensorflow를 설치하는 과정들을 정리해보았습니다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 12 Feb 2022 00:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/install-tensorflow</link>
+        <guid isPermaLink="true">http://localhost:4000/install-tensorflow</guid>
+      </item>
+      
     
       
       <item>
@@ -19,8 +34,8 @@
         
         <pubDate>Wed, 02 Feb 2022 00:00:00 +0900</pubDate>
         <link>
-        https://jahona.github.io/basic-started</link>
-        <guid isPermaLink="true">https://jahona.github.io/basic-started</guid>
+        http://localhost:4000/basic-started</link>
+        <guid isPermaLink="true">http://localhost:4000/basic-started</guid>
       </item>
       
     
@@ -37,8 +52,8 @@
         
         <pubDate>Tue, 01 Feb 2022 00:00:00 +0900</pubDate>
         <link>
-        https://jahona.github.io/web-started</link>
-        <guid isPermaLink="true">https://jahona.github.io/web-started</guid>
+        http://localhost:4000/web-started</link>
+        <guid isPermaLink="true">http://localhost:4000/web-started</guid>
       </item>
       
     

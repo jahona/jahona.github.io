@@ -11,7 +11,7 @@
 
 
 
-    <title>Search Result</title>
+    <title>Data - P:)</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -49,19 +49,19 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="기술블로그입니다" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/search" />
+    <link rel="canonical" href="http://localhost:4000/tag/data/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="P:)" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Search Result" />
+    <meta property="og:title" content="Data - P:)" />
     <meta property="og:description" content="기술블로그입니다" />
-    <meta property="og:url" content="http://localhost:4000/search" />
+    <meta property="og:url" content="http://localhost:4000/tag/data/" />
     <meta property="og:image" content="http://localhost:4000/assets/built/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Search Result" />
+    <meta name="twitter:title" content="Data - P:)" />
     <meta name="twitter:description" content="기술블로그입니다" />
     <meta name="twitter:url" content="http://localhost:4000/" />
     <meta name="twitter:image" content="http://localhost:4000/assets/built/images/blog-cover.jpg" />
@@ -81,7 +81,7 @@
         "name": "P:)",
         "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000/search",
+    "url": "http://localhost:4000/tag/data/",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:4000/assets/built/images/blog-cover.jpg",
@@ -90,7 +90,7 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/search"
+        "@id": "http://localhost:4000/tag/data/"
     },
     "description": "기술블로그입니다"
 }
@@ -105,20 +105,24 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Search Result" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Tag Page" href="/feed.xml" />
 
 
 </head>
-<body class="page-template">
+<body class="tag-template">
 
     <div class="site-wrapper">
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        <!-- < default -->
-<!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template -->
+        <!-- default -->
+<!-- The tag above means - insert everything in this file into the {body} of the default.hbs template -->
 
 <!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer">
+<!-- #tag -->
+<!-- dynamically loading backgrounds for tags,  descriptions and page titles -->
+
+
+
+<header class="site-header outer no-cover">
     <div class="inner">
         <nav class="site-nav">
     <div class="site-nav-left">
@@ -154,83 +158,69 @@ into the {body} of the default.hbs template -->
     </div>
 </nav>
 
+        <div class="site-header-content">
+            <h1 class="site-title">Data</h1>
+            <h2 class="site-description">
+                
+    			    A collection of 1 posts
+                
+            </h2>
+        </div>
     </div>
 </header>
+<!-- tag -->
 
-<!-- Everything inside the #post tags pulls data from the post -->
-<!-- #post -->
-
+<!-- The main content area -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
-
-        <article class="post-full  post page no-image">
-
-            <header class="post-full-header">
-                <h1 class="post-full-title">Search Result</h1>
-            </header>
-
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
             
 
-            <section class="post-full-content">
-                <form action="/search" method="get" hidden="hidden">
-    <label for="search-box"></label>
-    <input type="text" id="search-box" name="query">
-</form>
 
-<ul class="mylist" id="search-results"></ul>
+    <article class="post-card tag-template no-image">
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/install-tensorflow">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Data</span>
+                            
+                        
+                    
 
-<script>
-    window.store = {
-    
-    "install-tensorflow": {
-        "title": "Tensorflow Install",
-            "author": "bbo",
-            "category": "",
-            "content": "M1 맥북을 사용하고 있어서 M1에 맞게 tensorflow를 설치하는 과정들을 정리해보았습니다.Tensorflow 설치하기apple developer 사이트에 정리가 잘 되어 있는데요. apple developer site      먼저 Miniforge 파일을 다운받습니다.          miniforge3 는 conda package manager 를 설치할 수 있도록 제공해주는 프로그램입니다.        일반적으로 ~/Downloads 폴더에 저장이 됩니다.    miniforge3 다운로드 링크        다운로드 받은 sh 파일을 실행시키기 위해 다음 과정을 실행해줍니다.     $ chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh $ sh ~/Downloads/Miniforge3-MacOSX-arm64.sh        miniforge3 에서는 가상환경을 제공해줍니다.     $ source ~/miniforge3/bin/activate            Tensorflow 를 설치해줍니다.     # 의존성 $ conda install -c apple tensorflow-deps $ python -m pip install tensorflow-macos # 플러그인 $ python -m pip install tensorflow-metal      Jupyter Notebook 설치하기TensorFlow 를 사용할 때 함께 사용되는 Jupyter notebook 도 설치해줍니다.  Jupyter notebook 은 대화형 파이썬 인터프리터로서 파이썬 코드를 작성하여 실행할 때 편리함을 줍니다.$ source ~/miniforge3/bin/activate$ conda install jupyter notebook설치가 완료되었으면 서버를 실행하여 주어 콘솔창에 출력되는 로컬주소로 이용할 수 있습니다.$ jupyter-notebookconda deactivate 로 가상환경을 종료할 수 있습니다. 종료 이후에는 jupyter-notebook 을 입력해도 명령창에서 해당 명령을 찾지 못합니다. 그 이유는 가상 환경에서 패키지를 설치했기 때문에 시스템 환경과는 별개로 패키지가 관리가 됩니다.",
-        "url": "/install-tensorflow"
-    }
-    ,
-    
-    "basic-started": {
-        "title": "Rust Programming Language - Basic Started",
-            "author": "bbo",
-            "category": "",
-            "content": "Index    Rust Programming Language - Basic StartedRust 란?추가 예정Basic Started추가 예정",
-        "url": "/basic-started"
-    }
-    ,
-    
-    "web-started": {
-        "title": "Web 기술 정리",
-            "author": "bbo",
-            "category": "",
-            "content": "Index    준비중console.log('Hello World');console.log('Web is interesting');console.log('We begins to future');",
-        "url": "/web-started"
-    }
-    
-    
-    };
-</script>
-<script src="assets/js/lunr.js"></script>
-<script src="assets/js/search.js"></script>
+                    <h2 class="post-card-title">Tensorflow Install</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>M1 맥북을 사용하고 있어서 M1에 맞게 tensorflow를 설치하는 과정들을 정리해보았습니다.
 
-            </section>
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
 
-        </article>
 
+        </div>
     </div>
 </main>
-
-<!-- /post -->
-
-<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
-<script>
-$(function() {
-    var $postContent = $(".post-full-content");
-    $postContent.fitVids();
-});
-</script>
-
 
 
         <!-- Previous/next page links - displayed on every page -->
@@ -307,7 +297,7 @@ $(function() {
     <!-- Paginator increased to "infinit" in _config.yml -->
     <!-- if paginator.posts  -->
     <!-- <script>
-        var maxPages = parseInt('');
+        var maxPages = parseInt('1');
     </script>
     <script src="/assets/js/infinitescroll.js"></script> -->
     <!-- /endif -->
@@ -330,14 +320,6 @@ $(function() {
 
 
     <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
-    
-        <script>
-$(function() {
-    var $postContent = $(".post-full-content");
-    $postContent.fitVids();
-});
-</script>
-
     
 
     <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
